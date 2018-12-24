@@ -1,0 +1,71 @@
+'employee'
+'project'
+'department'
+'client_detials'
+'emp_comment'
+'emp_dependent'
+'emp_work'
+'employee_address'
+'employee_department'
+'employee_dependent'
+'employee_project'
+'employee_work_details'
+'employees_personal_info'
+'employees_personal_info_emp_address'
+'hibernate_sequence'
+'manager'
+
+'project_client_domain'
+'project_comment'
+'project_comments'
+'project_supervisor'
+=============================
+use emp_server_db;
+
+show tables;
+drop database emp_server_db;
+
+create database  emp_server_db
+
+use emp_server_db
+INSERT INTO `emp_server_db`.`employee` (`id`, `age`, `blood_group`, `dob`, `email_address`, `emp_id`, `first_name`, `last_name`, `middle_name`) VALUES ('1', '11', '0', '1990-09-01', 'a@gmail.com', 'k9166', 'abhi', 'singh', 'kumar');
+INSERT INTO `emp_server_db`.`project` (`id`, `project_location`, `project_name`, `projected_end_date`, `projected_start_date`, `eid`) VALUES ('1', 'bangalore', 'gravity', '2019-09-01', '2018-09-01', '1');
+INSERT INTO `emp_server_db`.`department` (`id`, `department_location`, `department_name`, `date_established`, `pid`) VALUES ('1', 'bangalore', 'gravity', '2019-09-01', '1');
+INSERT INTO `emp_server_db`.`client_detials` (`id`, `client_name`, `pid`) VALUES ('1', 'khols', '1');
+
+select * from emp_comment
+INSERT INTO `emp_server_db`.`emp_comment` (`id`, `comment`, `eid`) VALUES ('1', 'what is this', '1');
+
+select * from emp_dependent
+INSERT INTO `emp_server_db`.`emp_dependent` (`id`, `dependent_name`, `dob`, `phone`, `relation`, `sex`, `eid`) VALUES ('1', 'wife', '1990-09-01', '11111111', 'wife', 'female', '1');
+
+select * from emp_work
+INSERT INTO `emp_server_db`.`emp_work` (`id`, `logged_hours`, `projected_end_date`, `projected_start_date`, `remaining_hours`, `eid`) VALUES ('1', '99', '1990-09-01', '1990-09-01', '9', '1');
+
+
+select * from employee_address
+INSERT INTO `emp_server_db`.`employee_address` (`id`, `address_line_1`, `address_line_2`, `door_number`, `fax_number`, `house_name`, `land_mark`, `phone_number`, `zip_code`, `eid`, `tbemsemployee_domain_id`, `address_id`) VALUES ('1', 'skav', 'skav2', '207', '0000', 'shive mahima', 'mandir', '1111000', '22222', '1', '1', '1');
+
+
+select * from employee_department
+INSERT INTO `emp_server_db`.`employee_department` (`tbemsemployee_domain_id`, `department_id`) VALUES ('1', '1');
+	
+select * from employee_dependent
+INSERT INTO `emp_server_db`.`employee_dependent` (`tbemsemployee_domain_id`, `dependent_id`) VALUES ('1', '1');
+
+select * from employee_project
+INSERT INTO `emp_server_db`.`employee_project` (`tbemsemployee_domain_id`, `project_id`) VALUES ('1', '1');
+
+select * from employee_work_details
+INSERT INTO `emp_server_db`.`employee_work_details` (`tbemsemployee_domain_id`, `work_details_id`) VALUES ('1', '1');
+
+select * from project_client_domain
+INSERT INTO `emp_server_db`.`project_client_domain` (`tbemsproject_domain_id`, `client_domain_id`) VALUES ('1', '1');
+
+select * from project_comment
+INSERT INTO `emp_server_db`.`project_comment` (`id`, `comment`, `pid`) VALUES ('1', 'this is our proj', '1');
+
+select * from project_comments
+INSERT INTO `emp_server_db`.`project_comments` (`tbemsproject_domain_id`, `comments_id`) VALUES ('1', '1');
+
+select * from project_supervisor
