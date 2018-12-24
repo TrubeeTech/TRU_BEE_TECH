@@ -1,0 +1,266 @@
+
+*{
+ box-sizing: border-box;
+   }
+  
+   body {font-family: Arial, Helvetica, sans-serif;}
+  /**
+  * The main container of the home page whose
+  * page size are for desktop and laptops
+  */
+  .home-container{
+     width: 100%;
+     margin:0px auto;
+  
+  }
+  
+  /**
+  * This is for innerpage home-containner
+  */
+  .home-body-container{
+  
+  }
+  
+  /*
+  * This is the main login div for the page.
+  *
+  */
+  .login-container{
+     width: 75%;
+     height: 430px;
+     background:#efefef;
+     margin: 3px auto;
+     margin-top: 3%;
+     padding: .1%;
+  }
+  /**
+  * This is media query for smaller screen like tablets
+  *
+  */
+  @media screen and (max-width: 959px) {
+     .login-container{
+         width: 96%;
+         height: 430px;
+         background:#efefef;
+         margin:0px auto;
+         margin-top: 1.5%;
+     }
+  }
+  /**
+  * This is the container of the  left login
+  *
+  */
+  .login-container-left{
+     width: 27.9%;
+     height: 99%;
+     margin:0px auto;
+     float:left;
+     border-right: 1px solid #FFF;
+  }
+  /**
+  * This is the container of the  middle login
+  *
+  */
+  .login-container-middle{
+     width: 27.9%;
+     height: 99%;
+     margin:0px auto;
+     float:left;
+     border-right: 1px solid #FFF;
+  }
+  /**
+  * This is the container of the  right login controller
+  *
+  */
+  .login-container-right{
+    width: 43.5%;
+    height: 99%;
+    margin: .3%;
+    float: left;
+    background: #efefef;
+    border-left: 4px outset #FFF;
+  }
+  /*
+  *This is for devices which are below 640px like mobies ans Ipad
+  */
+  @media screen and (max-width: 640px) {
+    .login-container-left{
+       width: 99.8%;
+       margin-bottom: 2%;
+       height: 120%;
+     }
+     .login-container-middle{
+        width: 99.8%;
+        margin-bottom: 2%;
+           height: 110%;
+      }
+     .login-container-right{
+       width:99.8%;
+       height: 120%;
+       border: 3px solid #FFF;
+     }
+  }
+  
+  /**
+  * This is the menu that willl appear in the landing page
+  */
+  .login-blue-menu{
+    width: 29.9%;
+    height: 17.9%;
+    background: #4f5a84;
+    float: left;
+    margin: 1.7%;
+    opacity: .9;
+    border: 2px solid #FFF;
+    text-align: center;
+    }
+  
+    /**
+    * This is the menu that willl appear in the landing page black menu
+    */
+  .login-black-menu{
+    width: 29.9%;
+    height: 17.9%;
+    background: #555555;
+    float: left;
+    margin: 1.7%;
+    opacity: .9;
+    border: 2px solid #FFF;
+    }
+  
+  /*
+  * This is the signin box for the page.
+  * css following the form for web view
+  */
+  .login-sign-in-container{
+    width: 99%;
+    margin:2px auto;
+    height: 89%;
+    opacity:.9;
+    margin-right:.2%;
+    float:left;
+    //border-left: 2px outset #4f5a84;
+    //border-right: 2px outset #4f5a84;
+    border-radius: 5px;
+  }
+  /**
+  *Form for the signin- login
+  */
+  
+  form {
+    margin-left: 5.4%;
+  }
+  
+  /**
+  *Form Inpur for the signin- login
+  */
+  
+  input[type=text], input[type=password] {
+      width: 96%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+  }
+  /**
+  *Form button for the signin- login
+  */
+  button {
+     // background-color: #302c2c;
+     background-color:#555555;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 96%;
+  }
+  
+  /**
+  *Form button for the signin- login
+  */
+  button:hover {
+      background-color: #4f5a84;
+  }
+  
+  /**
+  *Form button for the signin- login
+  */
+  .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #555555;
+  }
+  
+  /**
+  *Form button for the signin- login
+  */
+  .imgcontainer {
+    width: 22%;
+    height: 70px;
+    border: 1px solid #111;
+    margin: 5% auto;
+    border-radius: 50%;
+  }
+  .availability{
+    width: 20%;
+    height: 20%;
+    background: green;
+    margin: 50% auto;
+    border-radius: 50%;
+  }
+  
+  /**
+  *Form button for the signin- login
+  */
+  img.avatar {
+      border-radius: 50%;
+  
+  }
+  /**
+  * Header content start here
+  */
+  .header-content {
+    overflow: hidden;
+    background-color: #4f5a84;
+    padding: 10px 5px;
+  }
+  /**
+  * Header content  starts here
+  */
+  
+  .header-logo {
+    float: left;
+    color: #dddae8;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  /**
+  * Menu for the header starts here .
+  */
+  .header-right-content{
+    float: right;
+  }
+  .header-right-content >a{
+    float: left;
+    color: #dddae8;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  .logn-pwd-link{
+    color: #555555;
+    margin: 12%;
+    text-decoration: none;
+  }
+  .login-form-act-ctrl{
+    margin-top: 1%;
+  }
