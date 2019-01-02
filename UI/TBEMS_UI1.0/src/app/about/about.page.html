@@ -1,0 +1,345 @@
+<ion-header> <ion-toolbar>
+  <div class="header-container">
+    <div class="header-content">
+      <a class="header-logo" href="#default">Kloud9</a>
+      <div class="header-right-content">
+        <a class="active" href="#home">About Us</a> <a href="#contact">Search</a>
+      </div>
+    </div>
+  </div>
+  </ion-toolbar> </ion-header>
+  
+  <ion-content>
+  <div class="home-container" ng-app="landingPage" ng-controller="myCtrl">
+  
+    <!-- This is  for the header profile container-->
+    <div class="header-desc-container">
+  
+      <!-- This is  for the header profile picture-->
+      <div class="profile-pic-container">
+        <div class="profile-pic-top profile-info"></div>
+        <div class="profile-pic-center"><img src="resources/images-icons/1.jpg"></div>
+        <div class="profile-pic-bottom profile-info"></div>
+      </div>
+  
+      <!-- This is  for the header profile description-->
+      <div class="profile-desc-container">
+          <img class="profile-image" src="resources/images-icons/2.jpg"/>
+      </div>
+    </div>
+  
+    <!-- This is  for the body container-->
+    <div class="body-container">
+  
+      <!-- This is  for the header menu container-->
+      <div class="header-menu-container">
+        <div class="header-menu"></div>
+        <div class="header-menu"></div>
+        <div class="header-menu"></div>
+        <div class="header-menu"></div>
+        <div class="header-menu"></div>
+        <div class="header-menu"></div>
+        <div class="header-menu"></div>
+        <div class="header-menu"></div>
+        <div class="header-menu"></div>
+        <div class="header-menu"></div>
+        <div class="header-menu"></div>
+        <div class="header-menu"></div>
+        <div class="header-menu"></div>
+        <div class="header-menu"></div>
+      </div>
+  
+      <!-- This is  for the body data container-->
+      <div class="body-data-container">
+        <div class="menu-left-container" ng-controller="myCtrl" >
+          <div class="menu-left-options-container">
+            <div class="menu-left"></div>
+            <div class="menu-left-options">
+              <div class="menu-button" ng-click="getHistory($event)">
+                <ion-icon ios="ios-home" md="md-home" class="left-menu-icon"></ion-icon>
+                <span>H</span>
+              </div>
+              <div class="menu-button" (click)="getMail($event)">
+                <ion-icon ios="ios-mail-open" md="md-mail-open"
+                  class="left-menu-icon">{{btnName}}</ion-icon>
+              </div>
+              <div class="menu-button">
+                <ion-icon ios="ios-pulse" md="md-pulse" class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button" ng-click="getSchedule($event)">
+                <ion-icon ios="ios-calendar" md="md-calendar"
+                  class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button">
+                <!-- Advanced: explicity set the icon for each platform -->
+                <ion-icon ios="ios-cart" md="md-cart" class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button">
+                <ion-icon ios="ios-chatbubbles" md="md-chatbubbles"
+                  class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button">
+                <ion-icon ios="ios-cloud-download" md="md-cloud-download"
+                  class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button">
+                <ion-icon ios="ios-cloud-upload" md="md-cloud-upload"
+                  class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button">
+                <ion-icon ios="ios-cog" md="md-cog" class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button">
+                <ion-icon ios="ios-contacts" md="md-contacts"
+                  class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button">
+                <ion-icon ios="ios-create" md="md-create" class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button">
+                <ion-icon ios="ios-folder-open" md="md-folder-open"
+                  class="left-menu-icon">
+                </ion-icon>
+              </div>
+              <div class="menu-button">
+                <ion-icon ios="ios-thumbs-up" md="md-thumbs-up" class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button">
+                <ion-icon ios="ios-trash" md="md-trash" class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button">
+                <ion-icon ios="logo-whatsapp" md="logo-whatsapp" class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button">
+                <ion-icon ios="ios-wifi" md="md-wifi" class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button">
+                <ion-icon ios="ios-unlock" md="md-unlock" class="left-menu-icon"></ion-icon>
+              </div>
+              <div class="menu-button"></div>
+              <div class="menu-button"></div>
+              <div class="menu-button"></div>
+              <div class="menu-button"></div>
+              <div class="menu-button"></div>
+              <div class="menu-button"></div>
+              <div class="menu-button"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- This is  for the body center container-->
+        <div class="body-data-center">
+          <div class="body-data-full">
+            <div class="data-full-header">
+              <ion-icon name="arrow-dropdown" class="dull-button"></ion-icon>
+              <ion-icon name="arrow-dropup" class="dull-button"></ion-icon>
+            </div>
+            <div class="user-data-container">
+  
+              <div class="user-data-img-container">
+                <div class="user-img-container"></div>
+                <div class="user-intro-container">
+                  <span>Kloud 9</span> <span><p>a retail service
+                      private limited</p></span>
+                </div>
+              </div>
+  
+              <div class="user-useful-info-container">
+  
+                <div class="user-qualification user-description">
+                  <span><p>Engineering service</p></span>
+                </div>
+
+                <div class="user-verification user-description">
+                  <span><p>some other information feedback and other</p></span>
+                </div>
+  
+                <div class="user-profile-summary user-description">
+                  <span>
+                    <p>This contains the summary of kloud9 This contains the
+                      summary of kloud9This contains the summary of kloud9</p>
+                  </span>
+                </div>
+                <div class="user-profile-menu-container">
+                  <div class="user-profile-menu">
+                    <button ion-button color="secondary"
+                      class="button-base button-secondary">Secondary</button>
+                    <button ion-button color="danger"
+                      class="button-base button-danger">Danger</button>
+                    <button ion-button icon-start class="button-base button-dark">
+                      <ion-icon name="star"></ion-icon>
+                      Left Icon
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="user-data-container"></div>
+            </div>
+          </div>
+  
+          <!-- this is the start for the split div-->
+          <div class="body-data-full">
+            <div class="data-full-header">
+              <ion-icon name="arrow-dropdown" class="dull-button"></ion-icon>
+              <ion-icon name="arrow-dropup" class="dull-button"></ion-icon>
+              <span>Kloud9 employee list</span>
+            </div>
+            <div class="user-data-container">
+              <ion-grid> <ion-row class="grid-header-row-black">
+              <ion-col col-md-6 push-md-3>Doctor</ion-col>
+              <ion-col col-md-3 push-md-3>Insurance Id</ion-col>
+              <ion-col col-md-3 pull-md-9>Diagnosis</ion-col> 
+              <ion-col col-md-6 push-md-3>Start date</ion-col>
+              <ion-col col-md-6 push-md-3>End date</ion-col>
+              <ion-col col-md-3 push-md-3>Status</ion-col>
+              <ion-col col-md-3 pull-md-9>View / Edit /Delete</ion-col> 
+              </ion-row>
+               <ion-row class="grid-row-grey"> 
+                  <ion-col col-md-6 push-md-3> DR. Mahesh </ion-col> 
+                  <ion-col col-md-3 push-md-3>Bajaj </ion-col>
+                  <ion-col col-md-3 pull-md-9> Fever</ion-col> 
+                  <ion-col col-md-6 push-md-3> 10/10/10 </ion-col> 
+                  <ion-col col-md-3 push-md-3>15/10/10 </ion-col>
+                  <ion-col col-md-3 pull-md-9>Cured</ion-col> 
+                  <ion-col col-md-3 pull-md-9> View / Edit /Delete </ion-col> 
+              </ion-row>
+               <ion-row class="grid-row-grey"> 
+                  <ion-col col-md-6 push-md-3> DR. Mahesh </ion-col> 
+                  <ion-col col-md-3 push-md-3>Bajaj </ion-col>
+                  <ion-col col-md-3 pull-md-9> Fever</ion-col> 
+                  <ion-col col-md-6 push-md-3> 10/10/10 </ion-col> 
+                  <ion-col col-md-3 push-md-3>15/10/10 </ion-col>
+                  <ion-col col-md-3 pull-md-9>Cured</ion-col> 
+                  <ion-col col-md-3 pull-md-9> View / Edit /Delete </ion-col> 
+                </ion-row> 
+                <ion-row class="grid-row-grey"> 
+                    <ion-col col-md-6 push-md-3> DR. Mahesh </ion-col> 
+                    <ion-col col-md-3 push-md-3>Bajaj </ion-col>
+                    <ion-col col-md-3 pull-md-9> Fever</ion-col> 
+                    <ion-col col-md-6 push-md-3> 10/10/10 </ion-col> 
+                    <ion-col col-md-3 push-md-3>15/10/10 </ion-col>
+                    <ion-col col-md-3 pull-md-9>Cured</ion-col> 
+                    <ion-col col-md-3 pull-md-9> View / Edit /Delete </ion-col> 
+                 </ion-row>
+               <ion-row class="grid-row-grey"> 
+                  <ion-col col-md-3 push-md-3> DR. Mahesh </ion-col> 
+                  <ion-col col-md-3 push-md-3>Bajaj </ion-col>
+                  <ion-col col-md-3 pull-md-9> Fever</ion-col> 
+                  <ion-col col-md-3 push-md-3> 10/10/10 </ion-col> 
+                  <ion-col col-md-3 push-md-3>15/10/10 </ion-col>
+                  <ion-col col-md-3 pull-md-9>Cured</ion-col> 
+                  <ion-col col-md-3 pull-md-9> View / Edit /Delete </ion-col> 
+              </ion-row>
+             </ion-grid>
+            </div>
+          </div>
+          <!-- this is end for the next div split div-->
+          <!-- this is the start for the split div-->
+          <div class="body-data-full">
+              <div class="data-full-header">
+                <ion-icon name="arrow-dropdown" class="dull-button"></ion-icon>
+                <ion-icon name="arrow-dropup" class="dull-button"></ion-icon>
+                <span>Kloud9 employee list</span>
+              </div>
+              <div class="user-data-container">
+                <ion-grid> <ion-row class="grid-header-row-black">
+                <ion-col col-md-3 push-md-3>Doctor</ion-col>
+                <ion-col col-md-3 push-md-3>Insurance Id</ion-col>
+                <ion-col col-md-3 pull-md-9>Diagnosis</ion-col> 
+                <ion-col col-md-3 push-md-3>Start date</ion-col>
+                <ion-col col-md-3 push-md-3>End date</ion-col>
+                <ion-col col-md-3 push-md-3>Status</ion-col>
+                <ion-col col-md-3 pull-md-9>
+                  <a class="acion_link" href="edit">Edit /</a>
+                  <a  class="acion_link" href="view">View /</a> 
+                  <a class="acion_link" href="delete">Delete </a>
+                </ion-col> 
+                </ion-row>
+                 <ion-row class="grid-row-grey" *ngFor="let c of testArray"> 
+                    <ion-col col-md-3 push-md-3>{{c.doctor}}</ion-col> 
+                    <ion-col col-md-3 push-md-3>{{c.insurance_id}} </ion-col>
+                    <ion-col col-md-3 pull-md-9> {{c.diagnosis}}</ion-col> 
+                    <ion-col col-md-3 push-md-3> {{c.start_date}} </ion-col> 
+                    <ion-col col-md-3 push-md-3>{{c.end_date}} </ion-col>
+                    <ion-col col-md-3 pull-md-9>{{c.status}}</ion-col> 
+                    <ion-col col-md-3 pull-md-9> {{c.action}} </ion-col> 
+                </ion-row>
+               </ion-grid>
+              </div>
+            </div>
+            <!-- this is end for the next div split div-->
+          <!-- this is the start for the split div-->
+          <div class="body-data-split-div">
+            <div class="data-full-header">
+              <ion-icon name="arrow-dropdown" class="dull-button"></ion-icon>
+              <ion-icon name="arrow-dropup" class="dull-button"></ion-icon>
+            </div>
+            <div class="user-data-container">
+                <div class="scheduler-container">
+                    <div class="location-searchbar">
+                      <ion-input placeholder="Locality"><ion-icon name="locate" class="app-icon"></ion-icon></ion-input>
+                    </div>
+                    <div class="date-bar">           
+                        <ion-input placeholder="Specialization">
+                          <ion-icon ios="ios-calendar" md="md-calendar" class="left-menu-icon" class="calender-bar"></ion-icon>
+                          </ion-input>
+                    </div>
+                    <div class="scheduler-button-holder">
+                            <button ion-button color="secondary"
+                              class="button-base button-secondary green-button">Search</button>
+                    </div>
+                </div>
+              <ion-grid> <ion-row class="grid-header-row">
+              <ion-col col-md-6 push-md-3> 1 of 3 </ion-col> <ion-col col-md-3
+                push-md-3> 2 of 3 </ion-col> <ion-col col-md-3 pull-md-9>
+              3 of 3 </ion-col> </ion-row> <ion-row class="grid-row"> <ion-col col-md-6
+                push-md-3> 1 of 3 </ion-col> <ion-col col-md-3 push-md-3>
+              2 of 3 </ion-col> <ion-col col-md-3 pull-md-9> 3 of 3 </ion-col> </ion-row> <ion-row
+                class="grid-row"> <ion-col col-md-6 push-md-3>
+              1 of 3 </ion-col> <ion-col col-md-3 push-md-3> 2 of 3 </ion-col> <ion-col
+                col-md-3 pull-md-9> 3 of 3 </ion-col> </ion-row> <ion-row class="grid-row grid-third-row">
+              <ion-col col-md-6 push-md-3> 1 of 3 </ion-col> <ion-col col-md-3
+                push-md-3> 2 of 3 </ion-col> <ion-col col-md-3 pull-md-9>
+              3 of 3 </ion-col> </ion-row> <ion-row class="grid-row"> <ion-col col-md-6
+                push-md-3> 1 of 3 </ion-col> <ion-col col-md-3 push-md-3>
+              2 of 3 </ion-col> <ion-col col-md-3 pull-md-9> 3 of 3 </ion-col> </ion-row> </ion-grid>
+            </div>
+          </div>
+          <!-- this is end for the next div split div-->
+  
+          <!-- this is the start for the split div-->
+          <div class="body-data-split-div">
+            <div class="data-full-header">
+              <ion-icon name="arrow-dropdown" class="dull-button"></ion-icon>
+              <ion-icon name="arrow-dropup" class="dull-button"></ion-icon>
+            </div>
+            <div class="user-data-container">
+                <div class="scheduler-container">
+                    <div class="date-bar">           
+                        <ion-input placeholder="Start Date">
+                          <ion-icon ios="ios-calendar" md="md-calendar" class="left-menu-icon" class="calender-bar"></ion-icon>
+                          </ion-input>
+                    </div>
+                    <div class="date-bar">           
+                        <ion-input placeholder="Start Date">
+                          <ion-icon ios="ios-calendar" md="md-calendar" class="left-menu-icon" class="calender-bar"></ion-icon>
+                          </ion-input>
+                    </div>
+                    <div class="scheduler-button-holder">
+                            <button ion-button color="secondary"
+                              class="button-base button-secondary green-button">Confirm</button>
+                    </div>
+                </div>
+                <div class="scheduler-information-container">
+                </div>
+            </div>
+          </div>
+          <!-- this is end for the next div split div-->
+  
+        </div>
+        <!-- This is  for the body data container ends here -->
+      </div>
+    </div>
+  </div>
+  </ion-content>
+  
