@@ -1,0 +1,43 @@
+<ion-header> <ion-toolbar>
+  <div class="header-container">
+    <div class="header-content">
+        <div>
+            <a  (click)="getDoclist($event)">Test Us</a>
+            </div>
+      <a class="header-logo" href="#default">Kloud9</a>
+      <div class="header-right-content">
+         <input type="text" name="search" placeholder="Search.." (click)="getCountry($event)">
+         <a class="active" (click)="getDoclist($event)">About Us</a>
+         <a href="#contact" (click)="getLoginPage()">Home</a>
+         <a href="#contact">Abhishek</a>
+         <a href="#profile" class="profile-img"><ion-icon name="person">A</ion-icon></a>
+      </div>
+    </div>
+  </div>
+  </ion-toolbar>
+ </ion-header>
+
+<ion-content padding> 
+  <ion-list >
+    <ion-item *ngFor="let c of countries">
+      <ion-avatar item-left>
+        <img src="{{c.flag}}">
+      </ion-avatar>
+      <h2>{{c.name}}</h2>
+      <p>Capital: {{c.capital}}, Region: {{c.region}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<!-- this is for my response-->
+<ion-content padding> 
+    <ion-list >
+      <ion-item *ngFor="let doc of docList">
+        <ion-avatar item-left>
+          <h2>{{doc.firstName}}</h2>
+        </ion-avatar>
+        <h2>{{doc.lastName}}</h2>
+     
+      </ion-item>
+    </ion-list>
+  </ion-content>
